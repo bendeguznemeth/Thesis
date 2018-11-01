@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8873557FFF3BE01A2EA66162 /* Pods_Optical_Flow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7564B0F8824B80C80BBFA9CD /* Pods_Optical_Flow.framework */; };
+		ED6A3A35215CE4A800676B46 /* squeezenet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3A34215CE4A800676B46 /* squeezenet.mlmodel */; };
+		ED8C4FC72103721200C3AA18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8C4FC62103721200C3AA18 /* AppDelegate.swift */; };
+		ED8C4FC92103721200C3AA18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8C4FC82103721200C3AA18 /* ViewController.swift */; };
+		ED8C4FCC2103721200C3AA18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8C4FCA2103721200C3AA18 /* Main.storyboard */; };
+		ED8C4FCE2103721300C3AA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8C4FCD2103721300C3AA18 /* Assets.xcassets */; };
+		ED8C4FD12103721300C3AA18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8C4FCF2103721300C3AA18 /* LaunchScreen.storyboard */; };
+		ED9359E8210378A200E19C74 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED9359E7210378A200E19C74 /* OpenCVWrapper.mm */; };
+		ED9AECB7215E26A900914F3D /* regression.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ED9AECB6215E26A900914F3D /* regression.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B9B2FBF8564CB9E8A830434 /* Pods-Optical Flow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Optical Flow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Optical Flow/Pods-Optical Flow.release.xcconfig"; sourceTree = "<group>"; };
+		7564B0F8824B80C80BBFA9CD /* Pods_Optical_Flow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Optical_Flow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F75C9FEB22354CADFA9236 /* Pods-Optical Flow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Optical Flow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Optical Flow/Pods-Optical Flow.debug.xcconfig"; sourceTree = "<group>"; };
+		ED6A3A34215CE4A800676B46 /* squeezenet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = squeezenet.mlmodel; sourceTree = "<group>"; };
+		ED8C4FC32103721200C3AA18 /* Optical Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Optical Flow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8C4FC62103721200C3AA18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED8C4FC82103721200C3AA18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED8C4FCB2103721200C3AA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED8C4FCD2103721300C3AA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED8C4FD02103721300C3AA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED8C4FD22103721300C3AA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED9359E5210378A200E19C74 /* Optical Flow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Optical Flow-Bridging-Header.h"; sourceTree = "<group>"; };
+		ED9359E6210378A200E19C74 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		ED9359E7210378A200E19C74 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		ED9AECB6215E26A900914F3D /* regression.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = regression.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED8C4FC02103721200C3AA18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8873557FFF3BE01A2EA66162 /* Pods_Optical_Flow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9260921A97289B5DDC34E444 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77F75C9FEB22354CADFA9236 /* Pods-Optical Flow.debug.xcconfig */,
+				2B9B2FBF8564CB9E8A830434 /* Pods-Optical Flow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7CFB06F77F9CEB68AEA0E05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7564B0F8824B80C80BBFA9CD /* Pods_Optical_Flow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED8C4FBA2103721200C3AA18 = {
+			isa = PBXGroup;
+			children = (
+				ED8C4FC52103721200C3AA18 /* Optical Flow */,
+				ED8C4FC42103721200C3AA18 /* Products */,
+				9260921A97289B5DDC34E444 /* Pods */,
+				B7CFB06F77F9CEB68AEA0E05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED8C4FC42103721200C3AA18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED8C4FC32103721200C3AA18 /* Optical Flow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED8C4FC52103721200C3AA18 /* Optical Flow */ = {
+			isa = PBXGroup;
+			children = (
+				ED8C4FC82103721200C3AA18 /* ViewController.swift */,
+				ED8C4FCA2103721200C3AA18 /* Main.storyboard */,
+				ED6A3A34215CE4A800676B46 /* squeezenet.mlmodel */,
+				ED9AECB6215E26A900914F3D /* regression.mlmodel */,
+				ED9359E42103782200E19C74 /* Wrappers */,
+				ED8C4FD82103725100C3AA18 /* Supporting Files */,
+			);
+			path = "Optical Flow";
+			sourceTree = "<group>";
+		};
+		ED8C4FD82103725100C3AA18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED8C4FC62103721200C3AA18 /* AppDelegate.swift */,
+				ED8C4FCD2103721300C3AA18 /* Assets.xcassets */,
+				ED8C4FCF2103721300C3AA18 /* LaunchScreen.storyboard */,
+				ED8C4FD22103721300C3AA18 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED9359E42103782200E19C74 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				ED9359E6210378A200E19C74 /* OpenCVWrapper.h */,
+				ED9359E7210378A200E19C74 /* OpenCVWrapper.mm */,
+				ED9359E5210378A200E19C74 /* Optical Flow-Bridging-Header.h */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED8C4FC22103721200C3AA18 /* Optical Flow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED8C4FD52103721300C3AA18 /* Build configuration list for PBXNativeTarget "Optical Flow" */;
+			buildPhases = (
+				53E32AD84C31DA8958D1A77E /* [CP] Check Pods Manifest.lock */,
+				ED8C4FBF2103721200C3AA18 /* Sources */,
+				ED8C4FC02103721200C3AA18 /* Frameworks */,
+				ED8C4FC12103721200C3AA18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Optical Flow";
+			productName = "Optical Flow";
+			productReference = ED8C4FC32103721200C3AA18 /* Optical Flow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED8C4FBB2103721200C3AA18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Németh Bendegúz";
+				TargetAttributes = {
+					ED8C4FC22103721200C3AA18 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = ED8C4FBE2103721200C3AA18 /* Build configuration list for PBXProject "Optical Flow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED8C4FBA2103721200C3AA18;
+			productRefGroup = ED8C4FC42103721200C3AA18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED8C4FC22103721200C3AA18 /* Optical Flow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED8C4FC12103721200C3AA18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8C4FD12103721300C3AA18 /* LaunchScreen.storyboard in Resources */,
+				ED8C4FCE2103721300C3AA18 /* Assets.xcassets in Resources */,
+				ED8C4FCC2103721200C3AA18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53E32AD84C31DA8958D1A77E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Optical Flow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED8C4FBF2103721200C3AA18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8C4FC92103721200C3AA18 /* ViewController.swift in Sources */,
+				ED8C4FC72103721200C3AA18 /* AppDelegate.swift in Sources */,
+				ED9AECB7215E26A900914F3D /* regression.mlmodel in Sources */,
+				ED9359E8210378A200E19C74 /* OpenCVWrapper.mm in Sources */,
+				ED6A3A35215CE4A800676B46 /* squeezenet.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED8C4FCA2103721200C3AA18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED8C4FCB2103721200C3AA18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED8C4FCF2103721300C3AA18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED8C4FD02103721300C3AA18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED8C4FD32103721300C3AA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED8C4FD42103721300C3AA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED8C4FD62103721300C3AA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F75C9FEB22354CADFA9236 /* Pods-Optical Flow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBVG4UVN9M;
+				INFOPLIST_FILE = "$(SRCROOT)/Optical Flow/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.n.bendeguz3.Optical-Flow";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Optical Flow/Wrappers/Optical Flow-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ED8C4FD72103721300C3AA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B9B2FBF8564CB9E8A830434 /* Pods-Optical Flow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBVG4UVN9M;
+				INFOPLIST_FILE = "$(SRCROOT)/Optical Flow/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.n.bendeguz3.Optical-Flow";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Optical Flow/Wrappers/Optical Flow-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED8C4FBE2103721200C3AA18 /* Build configuration list for PBXProject "Optical Flow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8C4FD32103721300C3AA18 /* Debug */,
+				ED8C4FD42103721300C3AA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED8C4FD52103721300C3AA18 /* Build configuration list for PBXNativeTarget "Optical Flow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8C4FD62103721300C3AA18 /* Debug */,
+				ED8C4FD72103721300C3AA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED8C4FBB2103721200C3AA18 /* Project object */;
+}
